@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração de Amor</title>
+    <style>
+        /* Estilo de fundo */
+        body {
+            background-color: #f7e7e9;
+            font-family: 'times new roman', sans-serif;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Estilo da caixa de mensagem */
+        .message-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeInUp 2s forwards;
+        }
+
+        /* Animação de fade-in e movimento para cima */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo do título */
+        .title {
+            font-size: 36px;
+            color: #e63946;
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: titleAnimation 2s ease-out;
+        }
+
+        /* Animação do título */
+        @keyframes titleAnimation {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Estilo do conteúdo da mensagem */
+        .content {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #2a2a2a;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do coração pulsante */
+        .heart {
+            font-size: 50px;
+            color: #e63946;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Animação do coração pulsante */
+        @keyframes pulse {
+            0% {
+                transform: scale(1.4);
+            }
+            50% {
+                transform: scale(1.8);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Botão de interação */
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #e63946;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #d62828;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1 class="title">Para Você, Meu Amor Nick!</h1>
+        <p class="content">Nick, dès notre première conversation, j'ai senti que quelque chose de bon et de nouveau allait se produire dans ma vie. J'ai appris à t'aimer comme je n'ai jamais aimé un autre homme de ma vie et, malgré mon anxiété et parfois mon immaturité, tu as été patient avec moi. Je suis heureuse que tu fasses partie de ma vie, de mon amour !!!! Durant ces 7 mois, tu m'as appris beaucoup de choses, notamment à rester calme, j'avoue que ce n'est pas facile mais j'y arrive.</p>
+        <p class="heart">❤️</p>
+        <p class="content">Je sais que ce n'est pas facile pour nous deux, mais avec la force de Dieu, nous y arriverons tous les jours. Mon amour, je te demande de me pardonner pour les nombreuses fois où je ne t'ai pas compris et je suis vraiment désolée, mais je te promets que je ferai tout ce que je peux pour que ça aille mieux parce que tu es l'amour de ma vie, les baisers de quelqu'un qui t'aime tous les jours.EDILANIA.
+</p>
+        <button class="btn" onclick="alert('EU TE AMO HOJE E SEMPRE!')">Clique aqui para saber o quanto você é amado!</button>
+    </div>
+</body>
+</html>
+
